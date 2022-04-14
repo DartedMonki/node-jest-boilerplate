@@ -1,14 +1,19 @@
 {
-    "extends": [
-        "standard",
-        "plugin:jest/recommended"
-    ],
-    "plugins": [
-        "import",
-        "jest"
-    ],
-    "env": {
-        "node": true,
-        "jest/globals": true
-    }
+  "extends": [
+      "plugin:jest/recommended",
+      "airbnb",
+      "prettier"
+  ],
+  "plugins": [
+      "import",
+      "jest",
+      "jsx-a11y"
+  ],
+  "env": {
+      "node": true,
+      "jest/globals": true
+  },
+  "rules": {
+    "no-console": "off"
+  }
 }
